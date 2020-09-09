@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import ContractList from './components/contract-list/contract-list.component';
 
 function App() {
   return (
     <div className="App">
-      <h1>Simple Form </h1>
+      <ContractList/>
     </div>
   );
 }
