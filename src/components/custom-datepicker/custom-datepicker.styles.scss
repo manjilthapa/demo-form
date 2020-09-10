@@ -2,42 +2,35 @@ $sub-color: grey;
 $main-color: black;
 
 @mixin shrinkLabel {
-  top: -14px;
+  top: 0px;
   font-size: 16px;
   font-weight: 500;
   color: $main-color;
 }
 
-.from-select-group {
+.form-date-group {
   position: relative;
-  margin: 45px 0;
+  margin: -23px 0;
 
-  .form-select {
+  .form-date-wrapper{
+      display:block;
+  }
+  .form-date {
     background: none;
     color: $sub-color;
     font-size: 16px;
     padding: 10px 0;
-    display: block;
     width: 100%;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
 
-    option {
-      color: black;
-      background: white;
-      display: flex;
-      white-space: pre;
-      min-height: 20px;
-      padding: 0px 2px 1px;
-    }
-
     &:focus {
       outline: none;
     }
 
-    &:focus ~ .form-select-label {
+    &:focus ~ .form-date-label {
       @include shrinkLabel();
     }
   }
@@ -46,14 +39,14 @@ $main-color: black;
     letter-spacing: 0.3em;
   }
 
-  .form-select-label {
+  .form-date-label {
     color: $sub-color;
     font-size: 16px;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
     left: 5px;
-    top: 10px;
+    top: 38px;
     transition: 300ms ease all;
 
     &.shrink {

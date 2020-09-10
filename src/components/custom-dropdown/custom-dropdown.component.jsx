@@ -3,7 +3,7 @@ import './custom-dropdown.styles.scss'
 
 const CustomDropDown = ({handleChange, label, options, ...otherProps}) => (
 
-    <div className="group">
+    <div className="from-select-group">
         <select className="form-select" onChange={handleChange} {...otherProps}>
             <option></option>
             {
@@ -13,7 +13,7 @@ const CustomDropDown = ({handleChange, label, options, ...otherProps}) => (
             }
 
         </select>
-        {label ? (<label className={`${otherProps.value.length ? 'shrink' : ''} form-input-label`}>{label}</label>):null}
+        {label ? (<label className={`${otherProps.value.length ? 'shrink' : ''} form-select-label`}>{label}</label>):null}
         
     </div> 
 )

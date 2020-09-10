@@ -3,7 +3,7 @@ $main-color: black;
 
 @mixin shrinkLabel {
   top: -14px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: $main-color;
 }
@@ -15,7 +15,7 @@ $main-color: black;
   .form-input {
     background: none;
     color: $sub-color;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 0;
     display: block;
     width: 100%;
