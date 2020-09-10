@@ -1,0 +1,23 @@
+.custom-button{
+    width:auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    background-color: rgba(48, 145, 228, 1);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'Open Sans Condensed';
+    border: none;
+    cursor: pointer;
+    position: relative;
+    float: right;
+
+    &:hover{
+        background-color: rgba($color: #65abda, $alpha: 1.0);
+        color: rgb(202, 198, 198);
+        border: 1px solid rgb(12, 139, 224);
+    }
+}
